@@ -8,7 +8,8 @@ var words = ["Hello", "world", "normally", "you", "want", "more", "words", "than
     });
 
 cloud().size([960, 500])
-    .canvas(function() { return new Canvas(1, 1); })
+    // .canvas(function() { return new Canvas(1, 1); })
+    .canvas(function() { return Canvas.createCanvas(1, 1); })
     .words(words)
     .padding(5)
     .rotate(function() { return ~~(Math.random() * 2) * 90; })
